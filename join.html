@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+  body{
+    background-color: darkgray;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+  }
+  .ft{
+    font-family: 'Nanum Myeongjo';
+    font-size: 24pt;
+    font-weight: bold;
+  }
+  .member{
+    display: block;
+    box-sizing: border-box;
+    font-size: 14pt;
+    font-family: 'Nanum Myeongjo';
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 50px;
+  }
+  .member .box{
+    border: 1px solid #cbcbcb;
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 20px 30px;
+  }
+  .member .field{
+    margin: 25px 0;
+  }
+  .member .phone{
+    margin: 25px 0;
+  }
+  .member .mail{
+    margin: 25px 0;
+  }
+  .member .birth{
+    margin: 25px 0;
+  }
+  .button{
+    text-align: center;
+  }
+</style>
+<body oncontextmenu="return false">
+  <div class="member">
+    <font class="ft">회원가입 양식</font><p style="margin-bottom: 30px;"></p>
+    <form class="box">
+      <div class="field">
+        <b>이름</b>
+        <input type="text" id="userName" placeholder="홍길동" style="width: 150px;">
+      </div>
+      <div class="field">
+        <b>아이디</b>
+        <input type="text" id="userId" placeholder="아이디 입력" style="width: 200px;">
+      </div>
+      <div class="field">
+        <b>비밀번호</b>
+        <input type="password" id="userPw" placeholder="영어, 숫자, 특수문자 포함 6자 이상" style="width: 300px;">
+      </div>
+      <div class="field">
+        <b>비밀번호 확인</b>
+        <input type="password" id="userPw" placeholder="비밀번호 재확인" style="width: 270px;">
+      </div>
+      <div class="phone">
+        <b>휴대 전화번호</b>
+        <input type="tel" placeholder="전화번호 입력" style="width: 180px;">
+        <input type="button" value="인증번호 전송" class="btn btn-outline-secondary">
+      </div>
+      <div class="mail">
+        <b>전자 메일</b>
+        <input type="text" id="user_mail" style="text-align: right;" value="@mail.com">
+      </div>
+      <div class="birth">
+        <div>
+          <b>생년월일</b>
+          <input type="tel" placeholder="년(4자)" maxlength="4" id="year" style="width: 180px;">
+          <select name="month" id="month">
+            <option value="month" selected>월</option>
+            <option value="1m">1월</option>
+            <option value="2m">2월</option>
+            <option value="3m">3월</option>
+            <option value="4m">4월</option>
+            <option value="5m">5월</option>
+            <option value="6m">6월</option>
+            <option value="7m">7월</option>
+            <option value="8m">8월</option>
+            <option value="9m">9월</option>
+            <option value="10m">10월</option>
+            <option value="11m">11월</option>
+            <option value="12m">12월</option>
+          </select>
+          <input type="number" placeholder="일" min="1" max="31" id="day" style="width: 50px;">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="button">
+    <button class="btn btn-secondary">회원가입</button>
+  </div>
+</body>
+</html>
